@@ -1,1 +1,2 @@
-# student_management_system
+# StudentManagementSystem
+ Student Management System Project in JavaFX

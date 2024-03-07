@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.WelcomeController">
+   <children>
+      <AnchorPane fx:id="welcome_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="close" layoutX="521.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="55.0" styleClass="close" stylesheets="@loginDesign.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+               </graphic>
+                 </Button>
+            <Pane layoutX="57.0" layoutY="59.0" prefHeight="70.0" prefWidth="478.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-3.0" prefHeight="78.0" prefWidth="478.0" text="WELCOME TO BUBBLE" textAlignment="CENTER" textFill="#2627c9">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="47.0" layoutY="226.0" prefHeight="54.0" prefWidth="497.0">
+               <children>
+                  <Button fx:id="student_btn" layoutY="8.0" mnemonicParsing="false" onAction="#student_button" prefHeight="39.0" prefWidth="173.0" style="-fx-background-color: #371fc3;" text="Login as Student" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="admin_btn" layoutX="324.0" layoutY="8.0" mnemonicParsing="false" onAction="#admin_button" prefHeight="39.0" prefWidth="173.0" style="-fx-background-color: #371fc3;" text="Login as Admin" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="48.0" layoutY="333.0" prefHeight="54.0" prefWidth="497.0">
+               <children>
+                  <Button fx:id="reg_btn" layoutX="2.0" layoutY="8.0" mnemonicParsing="false" onAction="#reg_button" prefHeight="39.0" prefWidth="497.0" style="-fx-background-color: #371fc3;" text="Create a Student Account" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
